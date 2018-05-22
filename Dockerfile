@@ -19,13 +19,14 @@ ENV LYBERTEAM_TIME_ZONE Europe/Kiev
 RUN apt-get update -yqq \
     && apt-get install -yqq \
 	ca-certificates \
-    git \
-    gcc \
-    make \
-    wget \
-    mc \
-    curl \
-    sendmail
+	git \
+	nano \
+	gcc \
+	make \
+	wget \
+	mc \
+	curl \
+	sendmail
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y dist-upgrade
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install python-software-properties
@@ -49,13 +50,12 @@ RUN apt-get update -yqq \
 	php7.1-imap \
 	php7.1-ldap \
 	php7.1-curl \
-	php7.1-gd  \
+	php7.1-gd \
 	php7.1-dev \
 	php7.1-fpm \
     	php7.1-bcmath \
     	php7.1-zip \
     && apt-get install pkg-config \
-    && apt-get install mongodb-org \
     && pecl install mongodb \
     && echo "extension=mongodb.so" > /etc/php/7.1/cli/conf.d/ext-mongodb.ini \
     && echo "extension=mongodb.so" > /etc/php/7.1/fpm/conf.d/ext-mongodb.ini \
