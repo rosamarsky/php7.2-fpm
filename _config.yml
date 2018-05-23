@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
-timezone: Europe/Kiev
+timezone: UTC
 webrick:
   headers:
     My-Header: PHP-FPM stable and fast container

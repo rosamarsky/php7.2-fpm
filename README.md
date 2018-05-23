@@ -4,7 +4,7 @@
  >
  > PHP-FPM version - 7.1.13
 
- > DateTime - Europe/Kiev
+ > TimeZone - UTC
 
  > Composer installed globally
 
@@ -34,7 +34,9 @@
  * php7.1-memcached
  * php7.1-mongodb
  * php7.1-bcmath
- * php7.1-imagick (`new`)
+ * php7.1-imagick
+ * mongodb
+ * amqp
 
 ### In addition
 
