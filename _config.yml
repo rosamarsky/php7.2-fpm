@@ -3,4 +3,4 @@ timezone: UTC
 webrick:
   headers:
     My-Header: PHP-FPM stable and fast container
-    My-Other-Header: Docker image dmiseev/php-fpm-7.1
+    My-Other-Header: Docker image rosamarsky/php-fpm-7.2

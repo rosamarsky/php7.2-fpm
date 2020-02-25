@@ -2,40 +2,35 @@
 
  **Helpful PHP-FPM image from official ubuntu:xenial**
  >
- > PHP-FPM version - 7.1.13
+ > PHP-FPM version - 7.2
 
  > TimeZone - UTC
 
  > Composer installed globally
 
 ## Tags
- * rosamarsky/php-fpm7.1:stable
+ * rosamarsky/php-fpm7.2:stable
 
 ### Extensions:
 
- * php7.1-pgsql
- * php7.1-mysql
- * php7.1-opcache
- * php7.1-common
- * php7.1-mbstring
- * php7.1-mcrypt
- * php7.1-soap
- * php7.1-cli
- * php7.1-intl
- * php7.1-json
- * php7.1-xsl
- * php7.1-imap
- * php7.1-ldap
- * php7.1-curl
- * php7.1-gd
- * php7.1-dev
- * php7.1-fpm
- * php7.1-redis
- * php7.1-memcached
- * php7.1-mongodb
- * php7.1-bcmath
- * php7.1-imagick
- * mongodb
+ * php7.2-mysql
+ * php7.2-opcache
+ * php7.2-common
+ * php7.2-mbstring
+ * php7.2-mcrypt
+ * php7.2-soap
+ * php7.2-cli
+ * php7.2-intl
+ * php7.2-json
+ * php7.2-xsl
+ * php7.2-imap
+ * php7.2-ldap
+ * php7.2-curl
+ * php7.2-gd
+ * php7.2-dev
+ * php7.2-fpm
+ * php7.2-memcached
+ * php7.2-bcmath
  * amqp
 
 ### In addition
@@ -48,7 +43,7 @@
 version: "2"
 services:
  php-fpm:
-   image: rosamarsky/php-fpm7.1
+   image: rosamarsky/php-fpm7.2
    volumes:
     - .:/usr/local/src/app
    working_dir: /usr/local/src/app
